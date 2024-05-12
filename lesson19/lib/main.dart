@@ -4,8 +4,10 @@ import "dart:io";
 void main() {
   int i = 0;
   do {
-    stdout.writeln(i);
-    stdout.writeln("next");
     i++;
-  } while (i <= 20);
+    stdout.writeln(i);
+    if (i != 20) {
+      stdout.writeln("next");
+    }
+  } while (i < 20);
 }
